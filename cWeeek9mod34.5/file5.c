@@ -3,6 +3,10 @@ int main(void)
 {
     FILE* In=fopen("input4.txt","r");
     FILE* Out=fopen("output4.txt","w");
+    if(In==NULL)
+    {
+        fprintf(Out,"ERROE FILE NOT FOUND\n");
+    }
     int n;
     fscanf(In,"%d",&n);
     int f=n;
